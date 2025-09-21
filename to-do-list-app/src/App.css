@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.app-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 350px;
+  box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-form input, .task-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 8px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border-left: 5px solid #007BFF;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-item button {
+  margin-left: 5px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.filter-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 4px;
+  background: #e0e0e0;
+}
+
+.filter-buttons button.active {
+  background: #007BFF;
+  color: white;
+}
